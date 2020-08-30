@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+body,
+html {
+  margin: 0;
+  font-family: "Quicksand", cursive;
+  font-size: 25px;
+  color: #485167;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#fn,
+#sn {
+  border: 2px solid #485167;
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+  background-color: #ab47bc;
+  color: aliceblue;
+}
+.firstnumber {
+  width: 40%;
+  float: left;
+  margin: 5% 15%;
+  text-align: center;
+}
+.secondnumber {
+  width: 40%;
+  float: right;
+  margin: 5% 15%;
+  text-align: center;
+  overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+.grid-container {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25%;
+}
+#add,
+#divide,
+#substract,
+#multiply {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #485167;
+  border-radius: 4px;
+  background-color: #aeea00;
+  color: #485167;
+  font-size: 20px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    background-color: lightblue;
+    align-content: center;
+  }
+  h1 {
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container {
+    display: block;
+  }
+  .firstnumber {
+    display: block;
+    position: relative;
+    left: 15%;
+  }
+  .secondnumber {
+    display: block;
+    float: left;
+    position: relative;
+    left: 15%;
+  }
+  .grid-container {
+    display: block;
+    text-align: center;
+  }
+}

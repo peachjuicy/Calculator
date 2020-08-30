@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calc.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="calc.js" async></script>
+  </head>
+
+  <body>
+      <h1>VERY SIMPLE CALCULATOR</h1>
+    <div class="container">
+            
+      <div class="firstnumber">
+            <form action="calc.php" method="POST"> 
+        <p>First number:</p>
+        <input type="number" name="fn" id="fn" onKeyUp="clicked()"/>
+       
+        <p id="displayfn"></p>
+        <input type="submit">
+    </form>
+    
+      </div>
+    
+      <div class="secondnumber">
+        <p>Second number:</p>
+        <input type="number" name="sn" id="sn" onKeyUp="clicked()"/>
+        
+        <p id="displaysn"></p>
+      </div>
+      
+   
+    </div>
+   
+      <div class="grid-container">
+        <div class="grid-item">
+          <button id="add"  onclick="add()">+</button>
+          <p id="displayadd"></p>
+        </div>
+
+        <div class="grid-item">
+          <button id="substract" onclick="substract()">-</button>
+          <p id="displaysubstract"></p>
+        </div>
+
+        <div class="grid-item">
+          <button id="multiply" onclick="multiply()">∙</button>
+          <p id="displaymultiply"></p>
+        </div>
+
+        <div class="grid-item">
+          <button id="divide" onclick="divide()">/</button>
+          <p id="displaydivide"></p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
